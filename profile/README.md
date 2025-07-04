@@ -1,6 +1,6 @@
 # CognoKratos - The Power of Knowledge
 
-![Cognokratos Header](https://www.cognokratos.com/_app/immutable/assets/bg.BGiCfUjP.avif)
+![Cognokratos Header](https://www.cognokratos.com/_app/immutable/assets/bg.BTShlFCB.avif)
 
 Welcome to **CognoKratos**, your gateway to unlocking the transformative potential of blockchain and artificial intelligence (AI). This README provides an overview of the CognoKratos platform and its mission to democratize cutting-edge technology.
 
