@@ -1,62 +1,93 @@
-# CognoKratos - The Power of Knowledge
+# 🧠 CognoKratos
+**Cognitio の Κράτος — The Power of Knowledge**
 
-![Cognokratos Header](https://www.cognokratos.com/_app/immutable/assets/bg.BTShlFCB.avif)
+Empowering entrepreneurs through open-source AI and Blockchain tools.
 
-Welcome to **CognoKratos**, your gateway to unlocking the transformative potential of blockchain and artificial intelligence (AI). This README provides an overview of the CognoKratos platform and its mission to democratize cutting-edge technology.
-
----
-
-## About CognoKratos
-
-**CognoKratos** is a learning hub designed for tech entrepreneurs, innovators, and curious minds. Whether you're a beginner or an experienced enthusiast, we break down complex concepts in blockchain and AI into actionable insights. Our mission is to make these technologies accessible and practical for everyone.
+![CognoKratos Header](images/bg.webp)
 
 ---
 
-## Key Features
+## 🌍 Mission
 
-### 1. **Educational Content**
-- **YouTube Channel**: High-quality video tutorials on blockchain and AI.
-- **Courses**: Dive deeper into technical topics on platforms like Udemy.
-
-### 2. **Guided Learning Path**
-- **Understanding Blockchain and AI**: Start with the basics and learn how these technologies intersect.
-- **Setting Up Your Tech**: Tutorials on crypto wallets, Ethereum environments, and AI integration.
-- **Building Solutions**: Real-world use cases such as decentralized applications, SaaS systems, and more.
-- **Advanced Topics**: Explore decentralized finance (DeFi), tokenization, and AI-driven automation.
-
-### 3. **Community Engagement**
-- **Collaborate**: Participate in discussions, share projects, and learn from peers.
-- **Supportive Environment**: Comment, ask questions, and get expert guidance.
-
-### 4. **Beyond YouTube**
-- For in-depth, hands-on learning, CognoKratos offers premium courses on Udemy, empowering learners to become experts in blockchain and AI.
+At **CognoKratos**, we accelerate the adoption of **Artificial Intelligence** and **Blockchain** by delivering open-source products and hands-on educational content.
+We serve tech entrepreneurs building ethical, secure, and impactful businesses.
 
 ---
 
-## Mission Statement
+## ⚙️ Ecosystem
 
-Our mission is to:
-1. **Democratize Blockchain Technology**: Simplify and teach the fundamentals of blockchain and AI.
-2. **Empower Entrepreneurs**: Provide tools and resources for innovative problem-solving.
-3. **Promote Collaboration**: Build a community of learners and creators to shape the future of technology.
+CognoKratos is built on a modular suite of interoperable tools, all connected by a shared protocol layer called **MCP (Multi-agent Communication Protocol)**.
 
----
-
-## How to Get Started
-
-1. **Visit the Website**: Explore our resources and community at [CognoKratos Website](https://www.cognokratos.com).
-2. **Subscribe to the YouTube Channel**: Access tutorials and updates at [YouTube - CognoKratos](https://www.youtube.com/@CognoKratos).
-3. **Follow Us on GitHub**: Find projects and code examples at [GitHub - CognoKratos](https://github.com/cognokratos).
-4. **Connect on Social Media**: Stay updated via [X (formerly Twitter)](https://x.com/PhiSkills).
+| Project         | Description                                                  | Language / Stack         |
+|-----------------|--------------------------------------------------------------|--------------------------|
+| `sophos-agent`  | AI-powered business assistant for automated workflows        | SvelteKit, LangGraph     |
+| `arktos-wallet` | On-premise cold wallet with encrypted multi-chain support    | Rust, SQLite, HTMX       |
+| `tauros-ecm`    | Blockchain-native contract and invoice management system     | Elixir, Phoenix LiveView |
+| `archnos-etl`   | Blockchain analytics & reporting with graph processing       | Scala, Neo4j             |
+| `lykos-vault`   | Smart contract certification and escrow using NFTs & ERC20   | Solidity, OpenZeppelin   |
+| `neos-node`     | Self-hosted EVM node deployment and API generation           | Go, Docker, HTMX         |
+| `ergos-platform`| AI-powered platform for smart contract and UI generation     | Elixir, Phoenix LiveView |
 
 ---
 
-## Join the Community
+## 🎓 Courses
 
-CognoKratos is more than a platform; it’s a movement. Together, we aim to unlock **The Power of Knowledge** and make blockchain and AI tools accessible for everyone.
+Each tool is accompanied by a practical, project-based course:
 
-**Subscribe today** and start building the future! 🚀
+- `aibc`: Mastering AI and Blockchain Fundamentals
+- `sophos`: Building ReAct AI Agents with MCP
+- `arktos`: Developing Cold Wallet Infrastructure
+- `tauros`: Creating Blockchain ECM Solutions
+- `archnos`: Designing Crypto ETL Pipelines
+- `lykos`: Implementing Smart Contract Escrows
+- `neos`: Running Containerized EVM Nodes
+- `ergos`: Automating dApp Development with AI
+
+> 🛠️ Learn it. Build it. Automate it.
 
 ---
 
-© 2024 CognoKratos. All rights reserved.
+## 🧑‍💻 Who This Is For
+
+CognoKratos supports:
+- Tech entrepreneurs & solo devs
+- SaaS & E-Commerce startups
+- FinTech and RegTech builders
+- Open-source contributors with a passion for global impact
+
+---
+
+## 📦 Tech Highlights
+
+- 🔗 Bitcoin & Ethereum Support (EVM, ERC20, ERC721)
+- 🧠 Autonomous Agents via ReAct & LangGraph
+- 🔐 Encrypted Local Wallets (Cold Storage)
+- 🗃️ Graph-Based Financial Analysis
+- ⚙️ Smart Contract Orchestration
+- 🐳 Docker-Ready & Air-Gapped Compatible
+- 🧬 Full AI + Blockchain interoperability via MCP
+
+---
+
+## 🤝 Get Involved
+
+We welcome contributors, educators, and partners!
+
+- 📂 Explore the repositories
+- 🛠️ Try a course + deploy a tool
+- 📢 Join the community [www.cognokratos.com](https://www.cognokratos.com/)
+
+> Together, let’s unlock the power of knowledge.
+
+---
+
+## 🧭 License & Principles
+
+All tools are released under open-source licenses (MIT).
+We support ethical tech use, decentralized sovereignty, and permissionless innovation.
+
+---
+
+## ✨ Motto
+
+> _CognoKratos — Because knowledge deserves power._
