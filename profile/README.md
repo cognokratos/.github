@@ -1,93 +1,95 @@
-# 🧠 CognoKratos
-**Cognitio の Κράτος — The Power of Knowledge**
+# CognoKratos
 
-Empowering entrepreneurs through open-source AI and Blockchain tools.
+**Build agents. Share the knowledge.**
 
-![CognoKratos Header](images/bg.webp)
+Practical agentic AI for engineers. Working code to learn from, foundations to build on, and a path to blockchain as financial infrastructure. An open-source initiative by [BelaZayka](https://www.belazayka.com).
 
----
+![CognoKratos gold emblem. Build agents. Share the knowledge. An initiative by BelaZayka.](images/header.png)
 
-## 🌍 Mission
-
-At **CognoKratos**, we accelerate the adoption of **Artificial Intelligence** and **Blockchain** by delivering open-source products and hands-on educational content.
-We serve tech entrepreneurs building ethical, secure, and impactful businesses.
+_Built to be understood. Designed to be extended. Shared to move us forward._
 
 ---
 
-## ⚙️ Ecosystem
+## Build with what exists
 
-CognoKratos is built on a modular suite of interoperable tools, all connected by a shared protocol layer called **MCP (Multi-agent Communication Protocol)**.
+Go beyond the demo. Inspect the architecture, run the evaluations, and follow the decisions from prompt to tool call.
 
-| Project         | Description                                                  | Language / Stack         |
-|-----------------|--------------------------------------------------------------|--------------------------|
-| `sophos-agent`  | AI-powered business assistant for automated workflows        | SvelteKit, LangGraph     |
-| `arktos-wallet` | On-premise cold wallet with encrypted multi-chain support    | Rust, SQLite, HTMX       |
-| `tauros-ecm`    | Blockchain-native contract and invoice management system     | Elixir, Phoenix LiveView |
-| `archnos-etl`   | Blockchain analytics & reporting with graph processing       | Scala, Neo4j             |
-| `lykos-vault`   | Smart contract certification and escrow using NFTs & ERC20   | Solidity, OpenZeppelin   |
-| `neos-node`     | Self-hosted EVM node deployment and API generation           | Go, Docker, HTMX         |
-| `ergos-platform`| AI-powered platform for smart contract and UI generation     | Elixir, Phoenix LiveView |
+### [`simple-agent-template`](https://github.com/cognokratos/simple-agent-template) — the foundation
 
----
+**Your next agent starts here.** A working reference for building tool-using agents. Start with a customer-support example, understand the trust boundaries, then adapt it to your domain.
 
-## 🎓 Courses
+- Keycloak authentication & Rust gateway
+- MCP tools, input & output guardrails
+- OpenTelemetry traces & MLflow evaluations
 
-Each tool is accompanied by a practical, project-based course:
+`Rust` `NeMo` `MCP` `PostgreSQL` · [Read the extension guide](https://github.com/cognokratos/simple-agent-template/blob/main/docs/EXTENDING.md)
 
-- `aibc`: Mastering AI and Blockchain Fundamentals
-- `sophos`: Building ReAct AI Agents with MCP
-- `arktos`: Developing Cold Wallet Infrastructure
-- `tauros`: Creating Blockchain ECM Solutions
-- `archnos`: Designing Crypto ETL Pipelines
-- `lykos`: Implementing Smart Contract Escrows
-- `neos`: Running Containerized EVM Nodes
-- `ergos`: Automating dApp Development with AI
+> Read-only by default. Optional human-approved changes.
 
-> 🛠️ Learn it. Build it. Automate it.
+### [`etf-research-agent`](https://github.com/cognokratos/etf-research-agent) — the applied example
 
----
+**Research with a reasoning trail.** See the template applied to ETF research: a deterministic Rust engine scores funds, an agent explains the evidence, and a human approves recorded decisions.
 
-## 🧑‍💻 Who This Is For
+- Versioned scoring rules & investor profiles
+- Signed human approvals for state changes
+- Append-only decision history
 
-CognoKratos supports:
-- Tech entrepreneurs & solo devs
-- SaaS & E-Commerce startups
-- FinTech and RegTech builders
-- Open-source contributors with a passion for global impact
+`Rust` `Decision support` `Human oversight` · [Walk through the example](https://github.com/cognokratos/etf-research-agent/blob/main/docs/DEMO.md)
+
+> Uses a dated data snapshot. No live market feed or trade execution.
+
+One foundation, different domains: the ETF research agent builds on the shared template. Each repository documents its setup, limitations and licensing notes.
 
 ---
 
-## 📦 Tech Highlights
+## Learn by building
 
-- 🔗 Bitcoin & Ethereum Support (EVM, ERC20, ERC721)
-- 🧠 Autonomous Agents via ReAct & LangGraph
-- 🔐 Encrypted Local Wallets (Cold Storage)
-- 🗃️ Graph-Based Financial Analysis
-- ⚙️ Smart Contract Orchestration
-- 🐳 Docker-Ready & Air-Gapped Compatible
-- 🧬 Full AI + Blockchain interoperability via MCP
+For engineers who want to understand how an agent works, where it can fail, and what keeps it accountable.
+
+1. **Inspect the boundaries.** Follow authentication, tool access and human approvals. See where authority lives and what the model is allowed to do. → [Read the architecture](https://github.com/cognokratos/simple-agent-template/blob/main/docs/ARCHITECTURE.md)
+2. **Measure the behaviour.** Run evaluations, inspect traces and test failure cases. Build confidence from evidence you can reproduce. → [Explore evaluation](https://github.com/cognokratos/simple-agent-template/blob/main/docs/EVALUATION.md)
+3. **Make it your own.** Replace the example domain with your data, tools and rules. Keep the foundations, and understand what needs to change. → [Start extending](https://github.com/cognokratos/simple-agent-template/blob/main/docs/EXTENDING.md)
 
 ---
 
-## 🤝 Get Involved
+## The next layer: agents that act, infrastructure to transact
 
-We welcome contributors, educators, and partners!
+An agent can call a tool. Giving it financial authority is a different engineering problem.
 
-- 📂 Explore the repositories
-- 🛠️ Try a course + deploy a tool
-- 📢 Join the community [www.cognokratos.com](https://www.cognokratos.com/)
+We are exploring blockchain as the financial infrastructure beneath agentic systems:
 
-> Together, let’s unlock the power of knowledge.
+| Layer          | Question                | Direction                                           |
+| -------------- | ----------------------- | --------------------------------------------------- |
+| **Identity**   | Know who is acting.     | Agent accounts and attributable actions.            |
+| **Authority**  | Define what is allowed. | Budgets, spending policies and approval thresholds. |
+| **Settlement** | Make value traceable.   | Payments and receipts with an auditable history.    |
 
----
-
-## 🧭 License & Principles
-
-All tools are released under open-source licenses (MIT).
-We support ethical tech use, decentralized sovereignty, and permissionless innovation.
+Human-defined policy. Machine-executed workflows. This is a research direction: the current projects focus on agent foundations and decision support, and onchain payments are future work.
 
 ---
 
-## ✨ Motto
+## On the horizon
 
-> _CognoKratos — Because knowledge deserves power._
+The longer-term CognoKratos ideas, kept in view as the foundations take shape. Some are already started in the open. Scope and order may change; none are released products.
+
+| Project                                                         | Focus                                          | Status  |
+| --------------------------------------------------------------- | ---------------------------------------------- | ------- |
+| [Σοφός Agent](https://github.com/cognokratos/sophos-agent)      | Agent orchestration for business workflows.    | Started |
+| [Αρκτος Wallet](https://github.com/cognokratos/arktos-wallet)   | Secure custody and controlled signing.         | Started |
+| [Ταύρος Revenue](https://github.com/cognokratos/tauros-revenue) | Contracts, invoices and payment workflows.     | Started |
+| Αρχνος Analytics                                                | Blockchain data pipelines and analytics.       | Planned |
+| Λύκος Vault                                                     | Smart-contract controls for trusted execution. | Planned |
+| Νέος Node                                                       | Controlled EVM deployment infrastructure.      | Planned |
+| Εργος Platform                                                  | Bring agents and onchain workflows together.   | Planned |
+
+---
+
+## Built in the open. Backed by BelaZayka.
+
+CognoKratos is an open-source initiative by BelaZayka GmbH, an independent AI consultancy based in the Zürich region of Switzerland.
+
+This is where we share practical engineering and explore what comes next. Explore the code, open an issue or contribute. If your team needs help applying it, [BelaZayka](https://www.belazayka.com) brings the architecture and implementation experience.
+
+[cognokratos.com](https://www.cognokratos.com) · [belazayka.com](https://www.belazayka.com)
+
+<sub>_Cognitio / Kratos_ — the power of knowledge. Shared. Project code is subject to each repository's licensing terms.</sub>
