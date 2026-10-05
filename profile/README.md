@@ -8,13 +8,13 @@ Runnable reference architectures for engineering increasingly consequential agen
 
 _Built to be understood. Designed to be extended. Shared to move us forward._
 
-Written for experienced software engineers: working code, reproducible experiments and explicit trade-offs instead of demos. Every project starts from the same premise. The model is a probabilistic, untrusted component, and authority is engineered deterministically around it.
+Written for experienced software engineers: working code, reproducible experiments and explicit trade-offs instead of demos. Across the portfolio, the model is treated as a probabilistic component. Where authority matters, it is enforced outside the model.
 
 ---
 
 ## Five engineering problems. Five runnable projects.
 
-Each project is a working system with its own learning path: lessons grounded in the code, labs that break it, and a clear line between what is implemented and what is planned.
+Each project is a working system with its own learning path, grounded in the code and explicit about what is implemented and what is planned.
 
 ### Production Agent Engineering · [`simple-agent-template`](https://github.com/cognokratos/simple-agent-template)
 
@@ -58,7 +58,7 @@ The model does not make the authoritative decision. A versioned Rust rules engin
 
 **How can agents do operational financial work while humans keep the authority?**
 
-Declarative domain modelling with Ash: resources, actions and policies that are enforced identically for the LiveView UI, the JSON:API and, next, AI tools. Humans and agents are distinct actors, and the domain, not the prompt, decides what an agent with a valid API key may do. Capability vs authority, non-human identity, financial intent, state machines, idempotency, audit and reconciliation.
+Declarative domain modelling with Ash: resources, actions and policies that are enforced identically for the LiveView UI, the JSON:API and, as planned, AI tools. Humans and agents are distinct actors, and the domain, not the prompt, decides what an agent with a valid API key may do. Capability vs authority, non-human identity, financial intent, state machines, idempotency, audit and reconciliation.
 
 `Elixir` `Phoenix` `Ash` `PostgreSQL` · **Start:** [Learning path](https://github.com/cognokratos/tauros-revenue/blob/main/docs/LEARNING-PATH.md)
 
@@ -98,9 +98,9 @@ Declarative domain modelling with Ash: resources, actions and policies that are 
    who may intend a payment, and why            who may exercise a key, and how
 ```
 
-The projects are complementary, not a mandatory curriculum. `simple-agent-template` teaches the general production-agent architecture and is the natural foundation. Sophos goes deep on runtime durability and ownership; ETF Research on governing consequential decisions. Arktos isolates cryptographic capability boundaries, and Tauros explores business and financial domain authority. Each project links back to the lesson it depends on instead of re-teaching it, so you can start wherever your question is.
+The projects are complementary, not a mandatory curriculum. `simple-agent-template` teaches the general production-agent architecture and is the natural foundation. Sophos goes deep on runtime durability and ownership; ETF Research on governing consequential decisions. Arktos isolates cryptographic capability boundaries, and Tauros explores business and financial domain authority. Sophos, ETF Research and Arktos link back to the lessons they depend on instead of re-teaching them, so you can start wherever your question is.
 
-Different engineering questions justify different tools. Rust holds the boundaries that must not bend: gateways, MCP servers, a rules engine, key handling. Python carries the agent framework, TypeScript and LangGraph.js a small runtime you can read end to end, and Elixir with Ash a domain whose rules are declared once and enforced everywhere.
+Different engineering questions justify different tools. Rust is used for several low-level security and protocol boundaries: gateways, MCP servers, deterministic rules and key handling. Python carries the agent framework in the NeMo projects, TypeScript and LangGraph.js keep the Sophos runtime small enough to read end to end, and Elixir with Ash expresses business authority declaratively at the domain layer, enforced the same way for every interface.
 
 ---
 
@@ -109,7 +109,7 @@ Different engineering questions justify different tools. Rust holds the boundari
 An agent can call a tool. Letting increasingly autonomous software take part in a financial workflow is a different engineering problem: authority has to be separated, and each part held by the component that can be trusted with it.
 
 ```text
-Model reasoning           interprets, explains, proposes          every project
+Model reasoning           interprets, explains, proposes          the agent projects
       ↓
 Agent capability          bounded tools, never credentials        simple-agent-template · arktos-wallet
       ↓
