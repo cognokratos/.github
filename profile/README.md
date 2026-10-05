@@ -2,94 +2,153 @@
 
 **Build agents. Share the knowledge.**
 
-Practical agentic AI for engineers. Working code to learn from, foundations to build on, and a path to blockchain as financial infrastructure. An open-source initiative by [BelaZayka](https://www.belazayka.com).
+Runnable reference architectures for engineering increasingly consequential agentic systems: from production agent foundations, through runtime durability and governed decisions, to cryptographic capabilities and financial workflows. An open-source initiative by [BelaZayka](https://belazayka.com).
 
 ![CognoKratos gold emblem. Build agents. Share the knowledge. An initiative by BelaZayka.](images/header.png)
 
 _Built to be understood. Designed to be extended. Shared to move us forward._
 
----
-
-## Build with what exists
-
-Go beyond the demo. Inspect the architecture, run the evaluations, and follow the decisions from prompt to tool call.
-
-### [`simple-agent-template`](https://github.com/cognokratos/simple-agent-template) — the foundation
-
-**Your next agent starts here.** A working reference for building tool-using agents. Start with a customer-support example, understand the trust boundaries, then adapt it to your domain.
-
-- Keycloak authentication & Rust gateway
-- MCP tools, input & output guardrails
-- OpenTelemetry traces & MLflow evaluations
-
-`Rust` `NeMo` `MCP` `PostgreSQL` · [Read the extension guide](https://github.com/cognokratos/simple-agent-template/blob/main/docs/EXTENDING.md)
-
-> Read-only by default. Optional human-approved changes.
-
-### [`etf-research-agent`](https://github.com/cognokratos/etf-research-agent) — the applied example
-
-**Research with a reasoning trail.** See the template applied to ETF research: a deterministic Rust engine scores funds, an agent explains the evidence, and a human approves recorded decisions.
-
-- Versioned scoring rules & investor profiles
-- Signed human approvals for state changes
-- Append-only decision history
-
-`Rust` `Decision support` `Human oversight` · [Walk through the example](https://github.com/cognokratos/etf-research-agent/blob/main/docs/DEMO.md)
-
-> Uses a dated data snapshot. No live market feed or trade execution.
-
-One foundation, different domains: the ETF research agent builds on the shared template. Each repository documents its setup, limitations and licensing notes.
+Written for experienced software engineers: working code, reproducible experiments and explicit trade-offs instead of demos. Every project starts from the same premise. The model is a probabilistic, untrusted component, and authority is engineered deterministically around it.
 
 ---
 
-## Learn by building
+## Five engineering problems. Five runnable projects.
 
-For engineers who want to understand how an agent works, where it can fail, and what keeps it accountable.
+Each project is a working system with its own learning path: lessons grounded in the code, labs that break it, and a clear line between what is implemented and what is planned.
 
-1. **Inspect the boundaries.** Follow authentication, tool access and human approvals. See where authority lives and what the model is allowed to do. → [Read the architecture](https://github.com/cognokratos/simple-agent-template/blob/main/docs/ARCHITECTURE.md)
-2. **Measure the behaviour.** Run evaluations, inspect traces and test failure cases. Build confidence from evidence you can reproduce. → [Explore evaluation](https://github.com/cognokratos/simple-agent-template/blob/main/docs/EVALUATION.md)
-3. **Make it your own.** Replace the example domain with your data, tools and rules. Keep the foundations, and understand what needs to change. → [Start extending](https://github.com/cognokratos/simple-agent-template/blob/main/docs/EXTENDING.md)
+### Production Agent Engineering · [`simple-agent-template`](https://github.com/cognokratos/simple-agent-template)
+
+**How is a production agent engineered around an untrusted probabilistic component?**
+
+Identity and trust boundaries through Keycloak and a Rust authentication gateway, MCP as a capability boundary, guardrails, opt-in signed human approvals, OpenTelemetry tracing and MLflow evaluation, and how to extend the reference architecture to your own domain. A learning path, concept pages, ten labs, a request walkthrough and challenges, all grounded in a read-only customer-support example.
+
+`Rust` `Python` `NeMo Agent Toolkit` `MCP` `Keycloak` `PostgreSQL` · **Start:** [Learning path](https://github.com/cognokratos/simple-agent-template/blob/main/docs/LEARNING-PATH.md)
+
+### Durable Agent Runtime Engineering · [`Σοφός Agent`](https://github.com/cognokratos/sophos-agent)
+
+**Once you have an agent, how do you make it durable software that survives time, state, crashes and restarts?**
+
+A small, local-first agent used to study runtime ownership: conversations vs threads vs runs vs checkpoints, SQLite checkpointing, durability boundaries, streaming vs persistence, kinds of memory, crash and resume semantics, and why checkpointing does not make side effects exactly-once.
+
+`TypeScript` `SvelteKit` `LangGraph.js` `SQLite` `MCP` `Ollama` · **Start:** [Runtime learning path](https://github.com/cognokratos/sophos-agent/blob/main/docs/RUNTIME-LEARNING-PATH.md)
+
+> A single-agent system; it does not implement multi-agent orchestration. Approvals, guardrails and tracing are on its roadmap.
+
+### Governed Decision Engineering · [`etf-research-agent`](https://github.com/cognokratos/etf-research-agent)
+
+**How do you put deterministic policy, evidence and human authority around probabilistic reasoning?**
+
+The model does not make the authoritative decision. A versioned Rust rules engine evaluates each fund against an investor profile; the model explains and proposes; a human confirms or overrides through a signed approval; every change lands in an append-only history recording the policy versions in force. Policy as data, uncertainty and missing data, evidence contracts, decision authority, policy-versioned audit and system-level evaluation. It builds on the `simple-agent-template` architecture rather than re-teaching it.
+
+`Rust` `Python` `NeMo Agent Toolkit` `MCP` `PostgreSQL` · **Start:** [Applied learning path](https://github.com/cognokratos/etf-research-agent/blob/main/docs/APPLIED-LEARNING-PATH.md)
+
+> Decision support on a dated data snapshot. No market feed, brokerage or trade execution.
+
+### Cryptographic Capability Engineering · [`Άρκτος Wallet`](https://github.com/cognokratos/arktos-wallet)
+
+**How can probabilistic software request cryptographic capabilities without becoming the custodian of cryptographic authority?**
+
+**Give agents capabilities, never secrets.** A self-hosted MCP service through which agents create HD wallets and derive Bitcoin Taproot and Ethereum addresses (BIP39, BIP32, BIP86, BIP44). Key hierarchies and HKDF separation, encrypted secret storage, secret lifetimes and zeroization boundaries, least-capability tool design, out-of-band identity, operator custody and recovery.
+
+`Rust` `Axum` `SQLCipher` `MCP` · **Start:** [Cryptographic capability learning path](https://github.com/cognokratos/arktos-wallet/blob/main/docs/CRYPTOGRAPHIC-CAPABILITY-LEARNING-PATH.md)
+
+> Agents receive public capabilities only. No tool signs or broadcasts transactions, signs messages, or exports keys, seeds or recovery phrases, so agents have no authority to move value. The model never holds secret material, but whoever operates the instance holds the encryption keys: self-hosted by the wallet owner, there is no third-party custodian; operated for someone else, the operator has custody.
+
+### Agentic Financial Workflow Engineering · [`Ταύρος Revenue`](https://github.com/cognokratos/tauros-revenue)
+
+**How can agents do operational financial work while humans keep the authority?**
+
+Declarative domain modelling with Ash: resources, actions and policies that are enforced identically for the LiveView UI, the JSON:API and, next, AI tools. Humans and agents are distinct actors, and the domain, not the prompt, decides what an agent with a valid API key may do. Capability vs authority, non-human identity, financial intent, state machines, idempotency, audit and reconciliation.
+
+`Elixir` `Phoenix` `Ash` `PostgreSQL` · **Start:** [Learning path](https://github.com/cognokratos/tauros-revenue/blob/main/docs/LEARNING-PATH.md)
+
+> Implemented on Ash: humans, agents with API keys, customer ownership and wallet-account onboarding. Next: the invoice lifecycle and its human approval gate. AI tools, audit, payments and reconciliation are on the [roadmap](https://github.com/cognokratos/tauros-revenue/blob/main/docs/ROADMAP.md).
 
 ---
 
-## The next layer: agents that act, infrastructure to transact
+## Choose where to start
 
-An agent can call a tool. Giving it financial authority is a different engineering problem.
-
-We are exploring blockchain as the financial infrastructure beneath agentic systems:
-
-| Layer          | Question                | Direction                                           |
-| -------------- | ----------------------- | --------------------------------------------------- |
-| **Identity**   | Know who is acting.     | Agent accounts and attributable actions.            |
-| **Authority**  | Define what is allowed. | Budgets, spending policies and approval thresholds. |
-| **Settlement** | Make value traceable.   | Payments and receipts with an auditable history.    |
-
-Human-defined policy. Machine-executed workflows. This is a research direction: the current projects focus on agent foundations and decision support, and onchain payments are future work.
+| If you want to…                                          | Start with                                                                                                                                               |
+| -------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Follow one request across every trust boundary           | [Follow one request](https://github.com/cognokratos/simple-agent-template/blob/main/docs/tutorials/REQUEST-WALKTHROUGH.md) · `simple-agent-template`     |
+| Adapt a production agent architecture to your domain     | [Extending the template](https://github.com/cognokratos/simple-agent-template/blob/main/docs/EXTENDING.md) · `simple-agent-template`                     |
+| See what survives when the process dies mid-run          | [Run lifecycle walkthrough](https://github.com/cognokratos/sophos-agent/blob/main/docs/runtime/RUN-LIFECYCLE-WALKTHROUGH.md) · `sophos-agent`            |
+| Trace one consequential decision from policy to audit    | [Follow one decision](https://github.com/cognokratos/etf-research-agent/blob/main/docs/applied/DECISION-WALKTHROUGH.md) · `etf-research-agent`           |
+| See where a secret exists, for how long, and who sees it | [Secret lifecycle walkthrough](https://github.com/cognokratos/arktos-wallet/blob/main/docs/capability/SECRET-LIFECYCLE-WALKTHROUGH.md) · `arktos-wallet` |
+| Understand why an agent's capability is not authority    | [AI capability is not authority](https://github.com/cognokratos/tauros-revenue/blob/main/docs/AI-AUTHORITY.md) · `tauros-revenue`                        |
 
 ---
 
-## On the horizon
+## How the projects fit together
 
-The longer-term CognoKratos ideas, kept in view as the foundations take shape. Some are already started in the open. Scope and order may change; none are released products.
+```text
+                        Production Agent Engineering
+                           simple-agent-template
+                  how a production agent is built and bounded
+                                     │
+              ┌──────────────────────┴──────────────────────┐
+              ▼                                             ▼
+   Durable Runtime Engineering                 Governed Decision Engineering
+          sophos-agent                               etf-research-agent
+   how the agent survives time                 how its decisions are governed
 
-| Project                                                         | Focus                                          | Status  |
-| --------------------------------------------------------------- | ---------------------------------------------- | ------- |
-| [Σοφός Agent](https://github.com/cognokratos/sophos-agent)      | Agent orchestration for business workflows.    | Started |
-| [Αρκτος Wallet](https://github.com/cognokratos/arktos-wallet)   | Secure custody and controlled signing.         | Started |
-| [Ταύρος Revenue](https://github.com/cognokratos/tauros-revenue) | Contracts, invoices and payment workflows.     | Started |
-| Αρχνος Analytics                                                | Blockchain data pipelines and analytics.       | Planned |
-| Λύκος Vault                                                     | Smart-contract controls for trusted execution. | Planned |
-| Νέος Node                                                       | Controlled EVM deployment infrastructure.      | Planned |
-| Εργος Platform                                                  | Bring agents and onchain workflows together.   | Planned |
+
+   Agentic Financial Workflow Engineering      Cryptographic Capability Engineering
+          tauros-revenue        ─ ─ planned ─ ─ ▶         arktos-wallet
+   who may intend a payment, and why            who may exercise a key, and how
+```
+
+The projects are complementary, not a mandatory curriculum. `simple-agent-template` teaches the general production-agent architecture and is the natural foundation. Sophos goes deep on runtime durability and ownership; ETF Research on governing consequential decisions. Arktos isolates cryptographic capability boundaries, and Tauros explores business and financial domain authority. Each project links back to the lesson it depends on instead of re-teaching it, so you can start wherever your question is.
+
+Different engineering questions justify different tools. Rust holds the boundaries that must not bend: gateways, MCP servers, a rules engine, key handling. Python carries the agent framework, TypeScript and LangGraph.js a small runtime you can read end to end, and Elixir with Ash a domain whose rules are declared once and enforced everywhere.
+
+---
+
+## From model reasoning to financial authority
+
+An agent can call a tool. Letting increasingly autonomous software take part in a financial workflow is a different engineering problem: authority has to be separated, and each part held by the component that can be trusted with it.
+
+```text
+Model reasoning           interprets, explains, proposes          every project
+      ↓
+Agent capability          bounded tools, never credentials        simple-agent-template · arktos-wallet
+      ↓
+Governed intent           deterministic policy and domain rules   etf-research-agent · tauros-revenue
+      ↓
+Human authority           signed approval, verified at mutation   etf-research-agent · simple-agent-template
+      ↓
+Cryptographic authority   keys held outside the model             arktos-wallet (no signing yet)
+      ↓
+Settlement                value moves and is reconciled           research direction
+```
+
+The question behind the whole initiative: **how can increasingly autonomous software participate in consequential financial workflows without giving probabilistic models uncontrolled authority?**
+
+> **Tauros knows financial intent. Arktos knows cryptographic authority.**
+
+Today they are deliberately separate. Tauros stores public wallet addresses only and never holds a key; Arktos derives addresses but does not sign or broadcast. An optional Tauros-to-Arktos adapter is on the Tauros roadmap. Signing, payments and onchain settlement remain future work.
+
+---
+
+## Research directions
+
+Ideas beyond the five current projects. All are exploratory and none has been started; scope and order may change.
+
+| Idea             | Direction                                      |
+| ---------------- | ---------------------------------------------- |
+| Αρχνος Analytics | Blockchain data pipelines and analytics.       |
+| Λύκος Vault      | Smart-contract controls for trusted execution. |
+| Νέος Node        | Controlled EVM deployment infrastructure.      |
+| Έργος Platform   | Bring agents and onchain workflows together.   |
 
 ---
 
 ## Built in the open. Backed by BelaZayka.
 
-CognoKratos is an open-source initiative by BelaZayka GmbH, an independent AI consultancy based in the Zürich region of Switzerland.
+CognoKratos is an open-source initiative by BelaZayka GmbH, an independent AI consultancy based in the Zürich region of Switzerland. It is where we share practical engineering in agentic AI and financial systems, and work out in the open what comes next.
 
-This is where we share practical engineering and explore what comes next. Explore the code, open an issue or contribute. If your team needs help applying it, [BelaZayka](https://www.belazayka.com) brings the architecture and implementation experience.
+Explore the code, open an issue or contribute. Each repository documents its own setup, limitations and licensing. If your team needs help applying these architectures, [BelaZayka](https://belazayka.com) brings the design and implementation experience.
 
-[cognokratos.com](https://www.cognokratos.com) · [belazayka.com](https://www.belazayka.com)
+[cognokratos.com](https://cognokratos.com) · [belazayka.com](https://belazayka.com)
 
 <sub>_Cognitio / Kratos_ — the power of knowledge. Shared. Project code is subject to each repository's licensing terms.</sub>
