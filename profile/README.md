@@ -20,7 +20,7 @@ Each project is a working system with its own learning path, grounded in the cod
 
 **How is a production agent engineered around an untrusted probabilistic component?**
 
-Identity and trust boundaries through Keycloak and a Rust authentication gateway, MCP as a capability boundary, guardrails, opt-in signed human approvals, OpenTelemetry tracing and MLflow evaluation, and how to extend the reference architecture to your own domain. A learning path, concept pages, ten labs, a request walkthrough and challenges, all grounded in a read-only customer-support example.
+Identity and trust boundaries through Keycloak and a Rust authentication gateway, MCP as a capability boundary, guardrails, opt-in signed human approvals, OpenTelemetry tracing and MLflow evaluation, and how to extend the reference architecture to your own domain. A learning path, concept pages, ten labs, a request walkthrough and challenges, all grounded in a customer-support example that is read-only by default.
 
 `Rust` `Python` `NeMo Agent Toolkit` `MCP` `Keycloak` `PostgreSQL` · **Start:** [Learning path](https://github.com/cognokratos/simple-agent-template/blob/main/docs/LEARNING-PATH.md)
 
@@ -58,11 +58,11 @@ The model does not make the authoritative decision. A versioned Rust rules engin
 
 **How can agents do operational financial work while humans keep the authority?**
 
-Declarative domain modelling with Ash: resources, actions and policies that are enforced identically for the LiveView UI, the JSON:API and, as planned, AI tools. Humans and agents are distinct actors, and the domain, not the prompt, decides what an agent with a valid API key may do. Capability vs authority, non-human identity, financial intent, state machines, idempotency, audit and reconciliation.
+Declarative domain modelling with Ash: resources, actions and policies that are enforced identically for the LiveView UI, the JSON:API and AI tools over MCP. Humans and agents are distinct actors, and the domain, not the prompt, decides what an agent with a valid API key may do. Capability vs authority, non-human identity, financial intent, state machines, idempotency, audit and reconciliation.
 
 `Elixir` `Phoenix` `Ash` `PostgreSQL` · **Start:** [Learning path](https://github.com/cognokratos/tauros-revenue/blob/main/docs/LEARNING-PATH.md)
 
-> Implemented on Ash: humans, agents with API keys, customer ownership and wallet-account onboarding. Next: the invoice lifecycle and its human approval gate. AI tools, audit, payments and reconciliation are on the [roadmap](https://github.com/cognokratos/tauros-revenue/blob/main/docs/ROADMAP.md).
+> Implemented on Ash, with a 16-lesson course and exercises: humans and agents with API keys, customer ownership, payment destinations, immutable invoice revisions, a state machine, idempotency, exact-payload human approval, an application-level audit record and eight reviewed MCP tools through AshAI. Database-enforced audit, payments and reconciliation are on the [roadmap](https://github.com/cognokratos/tauros-revenue/blob/main/docs/ROADMAP.md).
 
 ---
 
@@ -151,4 +151,4 @@ Explore the code, open an issue or contribute. Each repository documents its own
 
 [cognokratos.com](https://cognokratos.com) · [belazayka.com](https://belazayka.com)
 
-<sub>_Cognitio / Kratos_ — the power of knowledge. Shared. Project code is subject to each repository's licensing terms.</sub>
+<sub>_Cognitio / Kratos_ — the power of knowledge. Shared. Original code and documentation in each repository are MIT licensed; third-party material keeps its own terms, and logos and brand images are not covered. This profile text is MIT licensed; the header image is a brand asset.</sub>
