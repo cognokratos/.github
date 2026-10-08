@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">CognoKratos — Build agents. Engineer trust.</title>
+  <desc id="desc">A technical banner for the CognoKratos open-source engineering curriculum for autonomous economic agents.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050505"/>
+      <stop offset="1" stop-color="#0b0d0b"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff0b4"/>
+      <stop offset="1" stop-color="#e8c76a"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 10 5 0 10Z" fill="#8dff55"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
+  <g opacity=".16" stroke="#e8c76a">
+    <path d="M0 60H1200M0 120H1200M0 180H1200M0 240H1200M0 300H1200"/>
+    <path d="M60 0V360M120 0V360M180 0V360M240 0V360M300 0V360M360 0V360M420 0V360M480 0V360M540 0V360M600 0V360M660 0V360M720 0V360M780 0V360M840 0V360M900 0V360M960 0V360M1020 0V360M1080 0V360M1140 0V360"/>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="64" y="70" fill="#e8c76a" font-size="18" font-weight="700" letter-spacing="3">COGNOKRATOS</text>
+    <text x="64" y="132" fill="#f2f2ed" font-size="42" font-weight="700">Build agents.</text>
+    <text x="64" y="180" fill="url(#gold)" font-size="42" font-weight="700">Engineer trust.</text>
+    <text x="64" y="226" fill="#a2a29b" font-size="19">The open-source engineering curriculum for autonomous economic agents.</text>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">
+    <rect x="64" y="276" width="112" height="30" rx="15" fill="#0d1711" stroke="#31553c"/>
+    <text x="120" y="296" text-anchor="middle" fill="#8dff55">CAPABILITY</text>
+    <rect x="187" y="276" width="118" height="30" rx="15" fill="#0d1711" stroke="#31553c"/>
+    <text x="246" y="296" text-anchor="middle" fill="#8dff55">CONTINUITY</text>
+    <rect x="316" y="276" width="122" height="30" rx="15" fill="#0d1711" stroke="#31553c"/>
+    <text x="377" y="296" text-anchor="middle" fill="#8dff55">GOVERNANCE</text>
+    <rect x="449" y="276" width="218" height="30" rx="15" fill="#17140b" stroke="#8f783e"/>
+    <text x="558" y="296" text-anchor="middle" fill="#e8c76a">CRYPTOGRAPHIC CAPABILITY</text>
+  </g>
+
+  <g transform="translate(775 56)" font-family="Inter, Arial, sans-serif">
+    <rect width="345" height="248" rx="22" fill="#0b0d0b" stroke="#2c2c27" stroke-width="2"/>
+    <text x="22" y="34" fill="#e8c76a" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="2">TRUST ARCHITECTURE</text>
+
+    <rect x="26" y="55" width="293" height="44" rx="12" fill="#201a08" stroke="#e8c76a"/>
+    <text x="42" y="75" fill="#fff0b4" font-size="13" font-weight="700">MODEL / REASONING</text>
+    <text x="42" y="91" fill="#a2a29b" font-size="10">probabilistic · useful · not authoritative</text>
+
+    <path d="M172 99V115" stroke="#8dff55" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="38" y="119" width="269" height="37" rx="11" fill="#0d1711" stroke="#31553c"/>
+    <text x="52" y="142" fill="#8dff55" font-size="12" font-weight="700">CAPABILITY</text>
+
+    <path d="M172 156V170" stroke="#8dff55" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="38" y="174" width="269" height="37" rx="11" fill="#0d1711" stroke="#31553c"/>
+    <text x="52" y="197" fill="#8dff55" font-size="12" font-weight="700">DURABLE RUNTIME</text>
+
+    <rect x="38" y="220" width="128" height="18" rx="9" fill="#101215" stroke="#55564f"/>
+    <text x="102" y="233" text-anchor="middle" fill="#f2f2ed" font-size="9">HUMAN AUTHORITY</text>
+    <rect x="178" y="220" width="129" height="18" rx="9" fill="#17140b" stroke="#8f783e"/>
+    <text x="242" y="233" text-anchor="middle" fill="#e8c76a" font-size="9">OPEN FRONTIER</text>
+  </g>
+</svg>
