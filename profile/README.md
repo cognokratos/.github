@@ -6,7 +6,7 @@ CognoKratos is an **open-source, community-built engineering curriculum for the 
 
 AI agents are moving from systems that answer questions toward systems that act: invoking services, managing resources, proposing transactions and participating in economic workflows. CognoKratos explores the infrastructure required to give those systems meaningful capabilities **without surrendering security, verifiability or human control**.
 
-![CognoKratos gold emblem. Build agents. Share the knowledge. An initiative by BelaZayka.](images/header.png)
+![CognoKratos — Build agents. Engineer trust. The open-source engineering curriculum for autonomous economic agents.](images/header-2026.svg)
 
 > **The model is not the system.**
 >
@@ -14,7 +14,7 @@ AI agents are moving from systems that answer questions toward systems that act:
 
 The curriculum is written for technically ambitious builders: hackers, cypherpunks, protocol and security engineers, distributed-systems engineers, AI infrastructure engineers and open-source contributors who want to understand what changes when autonomous software is given authority over real systems and economic resources.
 
-[**Read the book**](https://book.cognokratos.com/) · [**Explore the curriculum**](../CURRICULUM.md) · [**Read the foundation**](../FOUNDATION.md) · [**Contribute**](../CONTRIBUTING.md) · [**cognokratos.com**](https://cognokratos.com)
+[**Read the book**](https://book.cognokratos.com/) · [**Explore the curriculum**](../CURRICULUM.md) · [**Read the foundation**](../FOUNDATION.md) · [**Contribute**](../CONTRIBUTING.md) · [**cognokratos.com**](https://www.cognokratos.com/)
 
 ---
 
