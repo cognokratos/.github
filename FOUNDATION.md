@@ -145,6 +145,10 @@ Reference architectures are propositions, not doctrine. Contributors should be a
 
 Autonomous systems are evolving. CognoKratos should evolve with them.
 
+### 11. Architecture outlives implementation
+
+Frameworks, platforms and protocols change. The engineering property a system depends on should remain identifiable and testable when the implementation changes.
+
 ## What each part of CognoKratos is for
 
 ### CognoKratos
