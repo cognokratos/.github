@@ -14,7 +14,19 @@ AI agents are moving from systems that answer questions toward systems that act:
 
 The curriculum is written for technically ambitious builders: hackers, cypherpunks, protocol and security engineers, distributed-systems engineers, AI infrastructure engineers and open-source contributors who want to understand what changes when autonomous software is given authority over real systems and economic resources.
 
-[**Read the book**](https://book.cognokratos.com/) · [**Explore the curriculum**](../CURRICULUM.md) · [**Read the foundation**](../FOUNDATION.md) · [**Contribute**](../CONTRIBUTING.md) · [**cognokratos.com**](https://www.cognokratos.com/)
+[**Read the book**](https://book.cognokratos.com/) · [**Explore the curriculum**](../CURRICULUM.md) · [**Explore the ecosystem**](https://cognokratos.com/ecosystem/) · [**Read the foundation**](../FOUNDATION.md) · [**Contribute**](../CONTRIBUTING.md) · [**cognokratos.com**](https://www.cognokratos.com/)
+
+---
+
+## Learn the architecture. Then choose the implementation.
+
+CognoKratos does not try to own every implementation layer. Agent frameworks, managed cloud platforms, governance toolkits, identity standards, wallet SDKs and payment or settlement infrastructure already exist for those jobs, and managed, open-source and self-built options can all be the right choice. CognoKratos is not another agent framework: it is a curriculum for understanding the trust boundaries between the frameworks, runtimes, policies, protocols and infrastructure you compose.
+
+That is also why the laboratories use different languages and stacks. Each one teaches an engineering property rather than loyalty to a tool, so you can recognise that property in whichever implementation you choose.
+
+> **The implementation may change. The engineering property should survive.**
+
+[**Explore the ecosystem**](https://cognokratos.com/ecosystem/) to see where CognoKratos fits among frameworks, platforms, standards and infrastructure, and where to learn the fundamentals if you are new to agents.
 
 ---
 
@@ -30,7 +42,9 @@ Agent loops, typed tools, MCP capability boundaries, grounding, guardrails, eval
 
 > **Core lesson:** Intelligence does not imply authority.
 
-[Learning path](https://github.com/cognokratos/simple-agent-template/blob/main/docs/LEARNING-PATH.md) · [Book, Part I](https://book.cognokratos.com/part-1/introduction.html)
+The same architecture is built twice: on [`main`](https://github.com/cognokratos/simple-agent-template/tree/main) with NVIDIA NeMo Agent Toolkit, the canonical production reference, and on [`rust-agent`](https://github.com/cognokratos/simple-agent-template/tree/rust-agent) in Rust on Rig, a comparative learning implementation. Neither is presented as universally better; comparing them separates architectural properties from framework conveniences. *Can you still recognise the architecture after replacing the framework?*
+
+[Learning path](https://github.com/cognokratos/simple-agent-template/blob/main/docs/LEARNING-PATH.md) · [Book, Part I](https://book.cognokratos.com/part-1/introduction.html) · [NAT and Rig compared](https://book.cognokratos.com/part-1/rig-rust.html)
 
 ### II · Durable Agent Runtime Engineering — [`Σοφός Agent`](https://github.com/cognokratos/sophos-agent)
 
